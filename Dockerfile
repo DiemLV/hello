@@ -1,4 +1,4 @@
-FROM python:3.9-slim
-RUN pip install flask
-COPY app.py /app.py
+FROM python:3.11-slim
+WORKDIR /app
+COPY app.py .
 CMD ["python", "app.py"]
