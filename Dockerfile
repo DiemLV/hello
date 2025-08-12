@@ -1,4 +1,4 @@
 FROM python:3.11-slim
 WORKDIR /app
-COPY app.py .
+COPY slow-responder.py .
 CMD ["python", "app.py"]
